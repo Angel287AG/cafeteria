@@ -44,14 +44,14 @@
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lsbBebidas = new System.Windows.Forms.ListBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdbEnergetica = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rdbEnergetica);
             this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.txtExtra);
             this.groupBox1.Controls.Add(this.lblExtra);
@@ -216,18 +216,18 @@
             this.lsbBebidas.TabIndex = 0;
             this.lsbBebidas.SelectedIndexChanged += new System.EventHandler(this.lsbBebidas_SelectedIndexChanged);
             // 
-            // radioButton1
+            // rdbEnergetica
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(119, 85);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(147, 24);
-            this.radioButton1.TabIndex = 11;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Bebidas Frias";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rdbEnergetica.AutoSize = true;
+            this.rdbEnergetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEnergetica.Location = new System.Drawing.Point(119, 85);
+            this.rdbEnergetica.Name = "rdbEnergetica";
+            this.rdbEnergetica.Size = new System.Drawing.Size(185, 24);
+            this.rdbEnergetica.TabIndex = 11;
+            this.rdbEnergetica.TabStop = true;
+            this.rdbEnergetica.Text = "bebida  energetica";
+            this.rdbEnergetica.UseVisualStyleBackColor = true;
+            this.rdbEnergetica.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // frmCafeteria
             // 
@@ -267,6 +267,6 @@
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.ListBox lsbBebidas;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbEnergetica;
     }
 }

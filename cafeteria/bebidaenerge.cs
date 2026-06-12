@@ -4,45 +4,44 @@ namespace Cafeteria
 {
     internal class bebidaenerge : Bebida
     {
-        private int CantidadCafeina;
-        private string Marca;
+        private int Bebidacafeina;
 
-        public int cantidadCafeina
+        public int bebidacafeina
         {
-            get { return CantidadCafeina; }
-            set { CantidadCafeina = value; }
+            get { return Bebidacafeina; }
+            set
+            {
+                if (value > 0)
+                {
+                    Bebidacafeina = value;
+                }
+                else
+                {
+                    Bebidacafeina = -1;
+                }
+            }
         }
 
-        public string marca
+        public bebidaenerge(string _nombre, string _tamaño, float _precio, int _bebidacafeina) : base(_nombre, _tamaño, _precio)
         {
-            get { return Marca; }
-            set { Marca = value; }
+            Bebidacafeina = _bebidacafeina;
         }
 
-        public bebidaenerge(
-            string _nombre,
-            string _tamaño,
-            float _precio,
-            int _cantidadCafeina,
-            string _marca)
-            : base(_nombre, _tamaño, _precio)
+        public bebidaenerge()
         {
-            CantidadCafeina = _cantidadCafeina;
-            Marca = _marca;
+            Bebidacafeina = 0;
+
         }
 
         public override string Preparar()
         {
-            return "Preparando un " + Nombre +
-                   " Energizante marca " + Marca +
-                   " de tamaño " + Tamaño +
-                   " con " + CantidadCafeina +
-                   " mg de cafeína";
+            return "Preparando un : " + Nombre + " embriagante de tamaño : " + Tamaño;
         }
 
         public string Mensaje()
         {
-            return Nombre + " Energizante";
+            return Nombre + " mg";
         }
+
     }
 }
