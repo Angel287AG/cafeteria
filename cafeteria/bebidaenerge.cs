@@ -35,7 +35,7 @@ namespace Cafeteria
 
         public override string Preparar()
         {
-            return "Preparando un : " + Nombre + " embriagante de tamaño : " + Tamaño;
+            return "Preparando un : " + Nombre + " tamaño : " + Tamaño;
         }
 
         public string Mensaje()
