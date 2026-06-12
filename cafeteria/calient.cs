@@ -6,7 +6,7 @@ namespace Cafeteria
     {
         private int Temperatura;
 
-        public int temperatura
+        public int temperatura 
         {
             get { return Temperatura; }
             set { Temperatura = value; }
