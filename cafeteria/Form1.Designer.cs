@@ -181,9 +181,9 @@
             this.groupBox2.Controls.Add(this.lblDescripcion);
             this.groupBox2.Controls.Add(this.lsbBebidas);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(428, 12);
+            this.groupBox2.Location = new System.Drawing.Point(389, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(450, 608);
+            this.groupBox2.Size = new System.Drawing.Size(489, 608);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bebidas Registradas";
