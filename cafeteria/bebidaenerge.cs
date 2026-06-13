@@ -22,9 +22,9 @@ namespace Cafeteria
             }
         }
 
-        public bebidaenerge(string _nombre, string _tamaño, float _precio, int _bebidacafeina) : base(_nombre, _tamaño, _precio)
+        public bebidaenerge(string _nombre, string _tamaño, float _precio, int _bebidacafeins): base(_nombre, _tamaño, _precio)
         {
-            Bebidacafeina = _bebidacafeina;
+            Bebidacafeina = _bebidacafeins;
         }
 
         public bebidaenerge()

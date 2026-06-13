@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace Cafeteria
 {
-    public partial class frmCafeteria : Form
+    public partial class frmcafeteria : Form
     {
         private List<Bebida> bebidas;
 
-        public frmCafeteria()
+        public frmcafeteria()
         {
             InitializeComponent();
             bebidas = new List<Bebida>();
@@ -20,11 +20,23 @@ namespace Cafeteria
             {
                 lblExtra.Text = "Temperatura";
             }
-            else
+        }
+        private void rdbfrio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbFrio.Checked)
             {
-                lblExtra.Text = "Hielos";
+                lblExtra.Text = "Hielo";
             }
         }
+        private void rdbEnergetica_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdbEnergetica.Checked)
+            {
+                lblExtra.Text = "cafeina";
+            }
+        }
+
+
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -48,19 +60,24 @@ namespace Cafeteria
 
             string nombre = txtNombre.Text.Trim();
             string tamano = cmbTamano.Text;
+         
+           
 
             if (rdbCaliente.Checked)
             {
-                bebidas.Add(
-                    new calient(nombre, tamano, precio, extra)
-                );
+                bebidas.Add(new calient(nombre, tamano, precio, extra));
+            }
+
+            else if(rdbEnergetica.Checked)
+            {
+                bebidas.Add(new fri(nombre, tamano, precio, extra) );
             }
             else
             {
-                bebidas.Add(
-                    new fri(nombre, tamano, precio, extra)
-                );
+                bebidas.Add(new fri(nombre, tamano, precio, extra));
             }
+
+
 
             Bebida ultima = bebidas[bebidas.Count - 1];
 
@@ -73,8 +90,7 @@ namespace Cafeteria
                 lsbBebidas.Items.Add(fria.Mensaje());
             }
 
-            lblCantidad.Text =
-                bebidas.Count + " Bebidas Registradas";
+            lblCantidad.Text =bebidas.Count + " Bebidas Registradas";
 
             LimpiarComponentes();
         }
@@ -91,8 +107,7 @@ namespace Cafeteria
         {
             if (lsbBebidas.SelectedIndex >= 0)
             {
-                lblDescripcion.Text =
-                    bebidas[lsbBebidas.SelectedIndex].Preparar();
+                lblDescripcion.Text =bebidas[lsbBebidas.SelectedIndex].Preparar();
             }
         }
 

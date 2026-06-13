@@ -12,21 +12,19 @@ namespace Cafeteria
             set { CantidadHielo = value; }
         }
 
-        public fri(string _nombre, string _tamaño,
-                   float _precio, int _cantidadHielo)
-            : base(_nombre, _tamaño, _precio)
-        {
+        public fri(string _nombre, string _tamaño, float _precio, int _cantidadHielo): base(_nombre, _tamaño, _precio)
+        { 
             CantidadHielo = _cantidadHielo;
         }
 
         public override string Preparar()
         {
-            return $"Preparando un {Nombre} frío de tamaño {Tamaño} con {CantidadHielo} hielos";
+            return "preparando un: " + Nombre + " frio de tamaño : " + Tamaño;
         }
 
         public string Mensaje()
         {
-            return $"{Nombre} Frío";
+            return Nombre + "frio";
         }
     }
 }

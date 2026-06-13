@@ -1,6 +1,6 @@
 ﻿namespace Cafeteria
 {
-    public partial class frmCafeteria
+    public partial class frmcafeteria
     {
         /// <summary>
         /// Required designer variable.
@@ -27,8 +27,10 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
+
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbEnergetica = new System.Windows.Forms.RadioButton();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtExtra = new System.Windows.Forms.TextBox();
             this.lblExtra = new System.Windows.Forms.Label();
@@ -44,7 +46,6 @@
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lsbBebidas = new System.Windows.Forms.ListBox();
-            this.rdbEnergetica = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -175,6 +176,19 @@
             this.rdbCaliente.UseVisualStyleBackColor = true;
             this.rdbCaliente.CheckedChanged += new System.EventHandler(this.rdbCaliente_CheckedChanged);
             // 
+            // rdbEnergetica
+            // 
+            this.rdbEnergetica.AutoSize = true;
+            this.rdbEnergetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEnergetica.Location = new System.Drawing.Point(97, 85);
+            this.rdbEnergetica.Name = "rdbEnergetica";
+            this.rdbEnergetica.Size = new System.Drawing.Size(185, 24);
+            this.rdbEnergetica.TabIndex = 11;
+            this.rdbEnergetica.TabStop = true;
+            this.rdbEnergetica.Text = "bebida  energetica";
+            this.rdbEnergetica.UseVisualStyleBackColor = true;
+            this.rdbEnergetica.CheckedChanged += new System.EventHandler(this.rdbEnergetica_CheckedChanged);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblCantidad);
@@ -183,7 +197,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(389, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(489, 608);
+            this.groupBox2.Size = new System.Drawing.Size(561, 608);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bebidas Registradas";
@@ -217,29 +231,16 @@
             this.lsbBebidas.TabIndex = 0;
             this.lsbBebidas.SelectedIndexChanged += new System.EventHandler(this.lsbBebidas_SelectedIndexChanged);
             // 
-            // rdbEnergetica
-            // 
-            this.rdbEnergetica.AutoSize = true;
-            this.rdbEnergetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbEnergetica.Location = new System.Drawing.Point(119, 85);
-            this.rdbEnergetica.Name = "rdbEnergetica";
-            this.rdbEnergetica.Size = new System.Drawing.Size(185, 24);
-            this.rdbEnergetica.TabIndex = 11;
-            this.rdbEnergetica.TabStop = true;
-            this.rdbEnergetica.Text = "bebida  energetica";
-            this.rdbEnergetica.UseVisualStyleBackColor = true;
-            this.rdbEnergetica.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // frmCafeteria
+            // frmcafeteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(890, 632);
+            this.BackColor = System.Drawing.Color.Blue;
+            this.ClientSize = new System.Drawing.Size(987, 632);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "frmCafeteria";
+            this.Name = "frmcafeteria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCafeteria";
             this.Load += new System.EventHandler(this.frmCafeteria_Load);
@@ -270,5 +271,6 @@
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.ListBox lsbBebidas;
         private System.Windows.Forms.RadioButton rdbEnergetica;
+
     }
 }

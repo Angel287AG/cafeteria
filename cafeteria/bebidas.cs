@@ -36,10 +36,16 @@ namespace Cafeteria
             Tamaño = _tamaño;
             Precio = _precio;
         }
+        public Bebida()
+        {
+            Nombre = "Desconocida";
+            Tamaño = "Desconocido";
+            Precio = 0;
+        }
 
         public virtual string Preparar()
         {
-            return $"Preparando un {Nombre} de tamaño {Tamaño}";
+            return "Preparando un : "+Nombre+" de tamano: "+Tamaño;
         }
 
         public void Descuento(float descuento)

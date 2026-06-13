@@ -10,7 +10,7 @@ namespace Cafeteria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCafeteria());
+            Application.Run(new frmcafeteria());
         }
     }
 }
