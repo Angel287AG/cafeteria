@@ -70,7 +70,7 @@ namespace Cafeteria
 
             else if(rdbEnergetica.Checked)
             {
-                bebidas.Add(new fri(nombre, tamano, precio, extra) );
+                bebidas.Add(new bebidaenerge(nombre, tamano, precio, extra) );
             }
             else
             {
@@ -89,12 +89,12 @@ namespace Cafeteria
             {
                 lsbBebidas.Items.Add(fria.Mensaje());
             }
-
-            lblCantidad.Text =bebidas.Count + " Bebidas Registradas";
-
+            else if (ultima is bebidaenerge energetica)
+            {
+                lsbBebidas.Items.Add(energetica.Mensaje());
+            }
             LimpiarComponentes();
         }
-
         private void LimpiarComponentes()
         {
             txtNombre.Clear();

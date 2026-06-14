@@ -40,7 +40,7 @@ namespace Cafeteria
 
         public string Mensaje()
         {
-            return Nombre + " mg";
+            return Nombre + " Energética : " + Bebidacafeina + " mg";
         }
 
     }

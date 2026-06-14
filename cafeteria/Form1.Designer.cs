@@ -72,6 +72,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "REGISTRO DE BEBIDAS";
             // 
+            // rdbEnergetica
+            // 
+            this.rdbEnergetica.AutoSize = true;
+            this.rdbEnergetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEnergetica.Location = new System.Drawing.Point(97, 85);
+            this.rdbEnergetica.Name = "rdbEnergetica";
+            this.rdbEnergetica.Size = new System.Drawing.Size(185, 24);
+            this.rdbEnergetica.TabIndex = 11;
+            this.rdbEnergetica.TabStop = true;
+            this.rdbEnergetica.Text = "bebida  energetica";
+            this.rdbEnergetica.UseVisualStyleBackColor = true;
+            this.rdbEnergetica.CheckedChanged += new System.EventHandler(this.rdbEnergetica_CheckedChanged);
+            // 
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(118, 486);
@@ -176,19 +189,6 @@
             this.rdbCaliente.UseVisualStyleBackColor = true;
             this.rdbCaliente.CheckedChanged += new System.EventHandler(this.rdbCaliente_CheckedChanged);
             // 
-            // rdbEnergetica
-            // 
-            this.rdbEnergetica.AutoSize = true;
-            this.rdbEnergetica.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbEnergetica.Location = new System.Drawing.Point(97, 85);
-            this.rdbEnergetica.Name = "rdbEnergetica";
-            this.rdbEnergetica.Size = new System.Drawing.Size(185, 24);
-            this.rdbEnergetica.TabIndex = 11;
-            this.rdbEnergetica.TabStop = true;
-            this.rdbEnergetica.Text = "bebida  energetica";
-            this.rdbEnergetica.UseVisualStyleBackColor = true;
-            this.rdbEnergetica.CheckedChanged += new System.EventHandler(this.rdbEnergetica_CheckedChanged);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblCantidad);
@@ -197,7 +197,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(389, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(561, 608);
+            this.groupBox2.Size = new System.Drawing.Size(495, 608);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bebidas Registradas";
@@ -236,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
-            this.ClientSize = new System.Drawing.Size(987, 632);
+            this.ClientSize = new System.Drawing.Size(901, 632);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
