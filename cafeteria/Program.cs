@@ -1,4 +1,5 @@
 ﻿using cafeteria;
+using cafeteria.login;
 using System;
 using System.Windows.Forms;
 
@@ -11,7 +12,7 @@ namespace Cafeteria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPrincipal());
+            Application.Run(new login());
         }
     }
 }

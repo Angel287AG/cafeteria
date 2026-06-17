@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cafeteriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.maquinaExpendedoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -37,7 +38,8 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cafeteriaToolStripMenuItem});
+            this.cafeteriaToolStripMenuItem,
+            this.maquinaExpendedoraToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 29);
@@ -50,6 +52,13 @@
             this.cafeteriaToolStripMenuItem.Size = new System.Drawing.Size(86, 25);
             this.cafeteriaToolStripMenuItem.Text = "Cafetería";
             this.cafeteriaToolStripMenuItem.Click += new System.EventHandler(this.cafeteriaToolStripMenuItem_Click_1);
+            // 
+            // maquinaExpendedoraToolStripMenuItem
+            // 
+            this.maquinaExpendedoraToolStripMenuItem.Name = "maquinaExpendedoraToolStripMenuItem";
+            this.maquinaExpendedoraToolStripMenuItem.Size = new System.Drawing.Size(179, 25);
+            this.maquinaExpendedoraToolStripMenuItem.Text = "maquina expendedora";
+            this.maquinaExpendedoraToolStripMenuItem.Click += new System.EventHandler(this.maquinaExpendedoraToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -72,5 +81,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cafeteriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem maquinaExpendedoraToolStripMenuItem;
     }
 }

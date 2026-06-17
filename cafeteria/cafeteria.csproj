@@ -63,11 +63,23 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="fri.cs" />
+    <Compile Include="frmmaquinaexpendedora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmaquinaexpendedora.Designer.cs">
+      <DependentUpon>frmmaquinaexpendedora.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,8 +89,14 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmmaquinaexpendedora.resx">
+      <DependentUpon>frmmaquinaexpendedora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="WinScript1.wsf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\pryMaquinaExpendedora\pryMaquinaExpendedora\pryMaquinaExpendedora.csproj">
+      <Project>{8b7a9d57-0a56-e5d8-8951-d0b4f90e9722}</Project>
+      <Name>pryMaquinaExpendedora</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -60,5 +60,24 @@ namespace cafeteria
                 cafeteria.Show();
             }
         }
+
+        private void maquinaExpendedoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form cafeteria = Application.OpenForms["maquina expendedora"];
+
+            if (cafeteria != null)
+            {
+                if (cafeteria.WindowState == FormWindowState.Minimized)
+                    cafeteria.WindowState = FormWindowState.Normal;
+
+                cafeteria.Activate();
+            }
+            else
+            {
+                cafeteria = new frmmaquinaexpendedora();
+                cafeteria.MdiParent = this;
+                cafeteria.Show();
+            }
+        }
     }
 }
